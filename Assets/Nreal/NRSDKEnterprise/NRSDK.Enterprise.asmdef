@@ -1,0 +1,10 @@
+{
+    "name": "NRSDK.Enterprise",
+    "references": [
+        "NRSDK"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
