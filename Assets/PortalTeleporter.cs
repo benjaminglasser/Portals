@@ -42,7 +42,6 @@ public class PortalTeleporter : MonoBehaviour
         if (other.tag == "Player")
         {
             playerIsOverlapping = true;
-            Debug.Log(playerIsOverlapping);
         }
     }
 
