@@ -7,17 +7,17 @@ public class PortalCamara : MonoBehaviour
 
     public Transform playerCamera;
     // portal in theatre
-    public Transform nextWorldPortal;
+    public Transform PortalCameraIsIn;
       // portal in rome
-    public Transform currentWorldPortal;
+    public Transform PortalPlayerIsIn;
   
 
     void LateUpdate()
     {
-        Vector3 playerOffsetFromPortal = playerCamera.position - currentWorldPortal.position;
-        transform.position = nextWorldPortal.position + playerOffsetFromPortal;
+        Vector3 playerOffsetFromPortal = playerCamera.position - PortalPlayerIsIn.position;
+        transform.position = PortalCameraIsIn.position + playerOffsetFromPortal;
 
-        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(nextWorldPortal.rotation, currentWorldPortal.rotation);
+        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(PortalCameraIsIn.rotation, PortalPlayerIsIn.rotation);
 
         Quaternion portalRotationalDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
         Vector3 newCameraDirection = portalRotationalDifference * playerCamera.forward;

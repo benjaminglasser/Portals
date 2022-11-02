@@ -432,7 +432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423145224}
   m_Layer: 0
-  m_Name: portal_FromTheatre
+  m_Name: portal_inBeach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -837,7 +837,7 @@ GameObject:
   - component: {fileID: 634856002}
   - component: {fileID: 634856001}
   m_Layer: 0
-  m_Name: Cam_FromRome
+  m_Name: Cam_Theatre1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,8 +870,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 5933126484706552906}
-  nextWorldPortal: {fileID: 7113952795229668614}
-  currentWorldPortal: {fileID: 2676011976494672166}
+  PortalCameraIsIn: {fileID: 7113952795229668614}
+  PortalPlayerIsIn: {fileID: 2676011976494672166}
 --- !u!114 &634856002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2036,7 +2036,7 @@ GameObject:
   - component: {fileID: 1718005333}
   - component: {fileID: 1718005332}
   m_Layer: 0
-  m_Name: Cam_FromBeach
+  m_Name: Cam_Theatre2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2069,8 +2069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 5933126484706552906}
-  nextWorldPortal: {fileID: 1750324594}
-  currentWorldPortal: {fileID: 423145224}
+  PortalCameraIsIn: {fileID: 1750324594}
+  PortalPlayerIsIn: {fileID: 423145224}
 --- !u!114 &1718005333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,7 +2157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1750324594}
   m_Layer: 0
-  m_Name: portals_ToBeach
+  m_Name: portals_InTheatre2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2193,7 +2193,7 @@ GameObject:
   - component: {fileID: 1774247924}
   - component: {fileID: 1774247923}
   m_Layer: 0
-  m_Name: Cam_Rome
+  m_Name: Cam_Rome1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2226,8 +2226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 5933126484706552906}
-  nextWorldPortal: {fileID: 2676011976494672166}
-  currentWorldPortal: {fileID: 7113952795229668614}
+  PortalCameraIsIn: {fileID: 2676011976494672166}
+  PortalPlayerIsIn: {fileID: 7113952795229668614}
 --- !u!114 &1774247924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,8 +2593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 5933126484706552906}
-  nextWorldPortal: {fileID: 423145224}
-  currentWorldPortal: {fileID: 1750324594}
+  PortalCameraIsIn: {fileID: 423145224}
+  PortalPlayerIsIn: {fileID: 1750324594}
 --- !u!20 &1899683718
 Camera:
   m_ObjectHideFlags: 0
@@ -4499,7 +4499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2676011976494672166}
   m_Layer: 0
-  m_Name: portals_ToTheatre
+  m_Name: portals_InRome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6649,7 +6649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7113952795229668614}
   m_Layer: 0
-  m_Name: portals_FromRome
+  m_Name: portals_inTheatre1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
