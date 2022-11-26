@@ -12,12 +12,13 @@ public class PortalTextureSetup : MonoBehaviour
 
 	void Start () {
 
+		
 
 		if (cameraA.targetTexture != null)
 		{
 			cameraA.targetTexture.Release();
 		}
-		cameraA.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+		cameraA.targetTexture = new RenderTexture(1920, 1080, 24);
 		cameraMatA.mainTexture = cameraA.targetTexture;
 
 
@@ -25,7 +26,7 @@ public class PortalTextureSetup : MonoBehaviour
 		{
 			cameraB.targetTexture.Release();
 		}
-		cameraB.targetTexture = new RenderTexture(Screen.width, Screen.height, 24);
+		cameraB.targetTexture = new RenderTexture(1920, 1080, 24);
 		cameraMatB.mainTexture = cameraB.targetTexture;
 	}
 	
