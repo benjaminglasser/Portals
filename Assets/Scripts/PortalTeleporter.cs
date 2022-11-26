@@ -14,12 +14,12 @@ public class PortalTeleporter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            Vector3 portalToPlayer = player.position - transform.position;
+            float dotProduct = Vector3.Dot(transform.up, portalToPlayer);
+            Debug.Log(dotProduct);
         if (playerIsOverlapping)
         {
             // calculating if the player is in front or behind of the portal
-            Vector3 portalToPlayer = player.position - transform.position;
-            float dotProduct = Vector3.Dot(transform.right, portalToPlayer);
-
             // If this is true: The player has moved across the portal
             if (dotProduct < 0f)
             {
